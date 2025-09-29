@@ -18,4 +18,12 @@ public class Calculator {
         return firstNum / secondNum;
     }
 
+    public double power(double firstNum, double secondNum) {
+        return Math.pow(firstNum, secondNum);
+    }
+
+    public double modulo(double firstNum, double secondNum) {
+        return firstNum % secondNum;
+    }
+
 }
