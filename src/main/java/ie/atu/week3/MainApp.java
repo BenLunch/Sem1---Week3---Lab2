@@ -19,6 +19,8 @@ public class MainApp {
         double result = switch (operation) {
             //Add Num1 to Num2
             case "add" -> myCalc.add(firstNum, secondNum);
+            //Subtract Num2 from Num1
+            case "subtract" -> myCalc.subtract(firstNum, secondNum);
             //Error message for incorrect operation choice
             default -> {
                 System.out.println("Invalid Operation");
