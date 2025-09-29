@@ -21,6 +21,8 @@ public class MainApp {
             case "add" -> myCalc.add(firstNum, secondNum);
             //Subtract Num2 from Num1
             case "subtract" -> myCalc.subtract(firstNum, secondNum);
+            //Multiply Num1 by Num2
+            case "multiply" -> myCalc.multiply(firstNum, secondNum);
             //Error message for incorrect operation choice
             default -> {
                 System.out.println("Invalid Operation");
