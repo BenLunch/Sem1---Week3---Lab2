@@ -24,6 +24,18 @@ public class MainApp {
             //Multiply Num1 by Num2
             case "multiply" -> myCalc.multiply(firstNum, secondNum);
             //Error message for incorrect operation choice
+            case "divide" -> {
+                if(secondNum == 0){
+                    System.out.println("Error: Cannot divide by zero");
+                    validOperation = false;
+                    yield 0;
+                }
+                else
+                {
+                    yield myCalc.divide(firstNum, secondNum);
+                }
+            }
+
             default -> {
                 System.out.println("Invalid Operation");
                 validOperation = false;
